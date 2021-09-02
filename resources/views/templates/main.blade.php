@@ -30,9 +30,10 @@
     </section>
 
     <footer>
-        <!-- includgin the footer component insidet the main page -->
+        <!-- including the footer component insidet the main page -->
         @include("templates.footer")
     </footer>
+
     
 </body>
 </html>

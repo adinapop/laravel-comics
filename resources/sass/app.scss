@@ -6,12 +6,15 @@
 
 * {
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
 }
 
-.container {max-width: 1200px;}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .row {display: flex;}
 

@@ -33,8 +33,90 @@
   font-size: 16px;
 }
 
+.footer-info {
+  background-image: url("/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-info .content-footer-info {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info .content-footer-info .info-lists {
+  display: flex;
+  padding: 36px 0;
+}
+
+.footer-info .content-footer-info .info-lists .info-box {
+  padding-right: 24px;
+}
+
+.footer-info .content-footer-info .info-lists .info-box .title {
+  color: white;
+  padding: 12px 0;
+  font-size: 18px;
+}
+
+.footer-info .content-footer-info .info-lists .info-box li {
+  padding: 2px 0;
+}
+
+.footer-info .content-footer-info .info-lists .info-box li a {
+  color: gray;
+  font-size: 14px;
+}
+
+.footer-info .content-footer-info .info-lists .info-box li a:hover {
+  text-decoration: underline;
+}
+
+.footer-info .content-footer-info .container-big-logo {
+  position: absolute;
+  transform: translate(100%);
+}
+
+.footer-info .content-footer-info .container-big-logo img {
+  width: 100%;
+}
+
+.footer-media {
+  padding: 24px 0;
+  background-color: #303030;
+  position: relative;
+}
+
+.footer-media .content-social-media-footer {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-media .content-social-media-footer .sign-up-button-container button {
+  background-color: #303030;
+  border: 1px solid #0282f9;
+  color: white;
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-media .content-social-media-footer .social-media-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.footer-media .content-social-media-footer .social-media-box a {
+  color: #0282f9;
+  padding-right: 12px;
+}
+
 .content-section {
   background-color: #0282f9;
+  position: relative;
+  z-index: 1002;
 }
 
 .content-section .container {
@@ -63,13 +145,14 @@
 
 * {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
 }
 
 .container {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .row {
