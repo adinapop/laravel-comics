@@ -3,6 +3,7 @@
     background-color: #0282f9;
     position: relative;
     z-index: 1002;
+    color: white;
 
     .container {
         padding: 24px 0;
@@ -12,16 +13,24 @@
             align-items: center;
     
             .buy-info-container {
-                display: flex;
-                align-items: center;
                 margin: 0 24px;
                 
-                .icon-box {
-                    width: 50px;
-                    padding-right: 12px;
-            
-                    img {width: 100%;}
+                a {
+
+                    display: flex;
+                    align-items: center;
+                    color: white;
+
+                    .icon-box {
+                        width: 50px;
+                        padding-right: 12px;
+                
+                        img {width: 100%;}
+                    }
+    
+                    span {font-size: 14px;}
                 }
+                
             }
         }
     }

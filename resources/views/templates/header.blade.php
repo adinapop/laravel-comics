@@ -6,19 +6,19 @@
 
         <div>
             <ul class="menu-info-nav">
-                <li>CHARACTERS</li>
-                <li>COMICS</li>
-                <li>MOVIES</li>
-                <li>TV</li>
-                <li>GAMES</li>
-                <li>VIDEOS</li>
-                <li>NEWS</li>
-                <li>SHOP</li>
+                <a href=""><li>CHARACTERS</li></a>
+                <a href=""><li>COMICS</li></a>
+                <a href=""><li>MOVIES</li></a>
+                <a href=""><li>TV</li></a>
+                <a href=""><li>GAMES</li></a>
+                <a href=""><li>VIDEOS</li></a>
+                <a href=""><li>NEWS</li></a>
+                <a href=""><li>SHOP</li></a>
             </ul>
         </div>
 
-        <div>
-            <input type="search" placeholder="Search">
+        <div class="search-input">
+            <input type="search" placeholder="Search" height="48"><i class="fas fa-search"></i>
         </div>
     </div>
 </div>
