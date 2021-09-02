@@ -1,0 +1,29 @@
+.content-section  {
+
+    background-color: #0282f9;
+
+    .container {
+        padding: 24px 0;
+
+        .row {
+            justify-content: center;
+            align-items: center;
+    
+            .buy-info-container {
+                display: flex;
+                align-items: center;
+                margin: 0 24px;
+                
+                .icon-box {
+                    width: 50px;
+                    padding-right: 12px;
+            
+                    img {width: 100%;}
+                }
+            }
+        }
+    }
+
+    
+}
+

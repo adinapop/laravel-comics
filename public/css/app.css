@@ -33,6 +33,34 @@
   font-size: 16px;
 }
 
+.content-section {
+  background-color: #0282f9;
+}
+
+.content-section .container {
+  padding: 24px 0;
+}
+
+.content-section .container .row {
+  justify-content: center;
+  align-items: center;
+}
+
+.content-section .container .row .buy-info-container {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.content-section .container .row .buy-info-container .icon-box {
+  width: 50px;
+  padding-right: 12px;
+}
+
+.content-section .container .row .buy-info-container .icon-box img {
+  width: 100%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0 auto;

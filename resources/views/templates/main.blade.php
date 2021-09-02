@@ -25,6 +25,10 @@
         @yield("content")
     </div>
 
+    <section>
+        @include("templates.shopSection")
+    </section>
+
     <footer>
         <!-- includgin the footer component insidet the main page -->
         @include("templates.footer")

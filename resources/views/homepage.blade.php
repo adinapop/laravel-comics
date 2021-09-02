@@ -6,4 +6,5 @@
 
 @section("content")
     <!-- here will be the main content with all games -->
+    MAIN
 @endsection
