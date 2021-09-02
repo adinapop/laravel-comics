@@ -1,1 +1,21 @@
-//
+@import "nav";
+@import "header";
+@import "footer";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {max-width: 1200px;}
+
+.row {display: flex;}
+
+ul {list-style: none;}
+
+a {text-decoration: none;}
+
+
