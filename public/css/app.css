@@ -11205,6 +11205,24 @@ a.text-dark:focus {
   background-color: #0282f9;
 }
 
+.info-container .green-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-container .green-container .price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 12px;
+}
+
+.description-container {
+  background-color: #f6f6f6;
+}
+
 * {
   font-family: "Roboto Condensed", sans-serif;
 }

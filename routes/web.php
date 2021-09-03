@@ -27,7 +27,7 @@ Route::get('/game/{id}', function ($id) {
     $arrayIndex = $id - 1;
     $arrayGames = config('gamesDb');
     return view('game', [
-        "arrayIndex" => $arrayIndex,
+        'arrayIndex' => $arrayIndex,
         'games' => $arrayGames
     ]);
 })->name("game");
