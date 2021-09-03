@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
+    // metto in una variabile l'array di giochi che me lo prende da config dal file php gameDb, che ho creato prima
+    $arrayGames = config('gamesDb');
+    return view('homepage', [
+        'games' => $arrayGames
+    ]);
 })->name("home");

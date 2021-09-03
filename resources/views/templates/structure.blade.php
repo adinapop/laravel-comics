@@ -20,10 +20,10 @@
         @include("templates.header")
     </header>
 
-    <div class="container">
+    <main>
         <!-- il div "cede" il suo contenuto con yield alla section dove sarà inserito -->
-        @yield("content")
-    </div>
+        @yield("Maincontent")
+    </main>
 
     <section>
         @include("templates.shopSection")
