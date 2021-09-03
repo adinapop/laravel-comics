@@ -43,13 +43,29 @@
     <div class="description-container">
         <div class="container">
             <div class="row">
-                
-                <div class="talent-container">
 
+                <div class="talent-container col-6">
+                    <h2>Talent</h2>
+                    <div class="artists-container">
+                        <div>Art by:</div>
+                        <p>
+                            @foreach($games[$arrayIndex]['artists'] as $artist)
+                                    {{$artist}}
+                            @endforeach
+                        </p>
+                    </div>
                 </div>
 
-                <div class="specs-container">
-
+                <div class="specs-container col-6">
+                    <h2>Specs</h2>
+                    <div class="writers-container">
+                        <div>Written by:</div>  
+                        <p>
+                            @foreach($games[$arrayIndex]['writers'] as $writer)
+                            {{$writer}}
+                            @endforeach
+                        </p>
+                    </div>
                 </div>
 
             </div>

@@ -11223,6 +11223,14 @@ a.text-dark:focus {
   background-color: #f6f6f6;
 }
 
+.description-container .talent-container .artists-container {
+  display: flex;
+}
+
+.description-container .specs-container .writers-container {
+  display: flex;
+}
+
 * {
   font-family: "Roboto Condensed", sans-serif;
 }

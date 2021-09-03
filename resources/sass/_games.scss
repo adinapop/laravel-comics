@@ -22,5 +22,18 @@
 
 .description-container {
     background-color: #f6f6f6;
+
+    .talent-container {
+
+        .artists-container {
+            display: flex;
+        }
+    }
+
+    .specs-container {
+        .writers-container {
+            display: flex;
+        }
+    }
 }
 
