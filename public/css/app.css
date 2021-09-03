@@ -11173,6 +11173,20 @@ a.text-dark:focus {
   transform: translateY(-30px);
 }
 
+.series-container .container .games-container {
+  padding: 50px 0;
+}
+
+.series-container .container .games-container .game-box .img-game-box img {
+  width: 100%;
+}
+
+.series-container .container .games-container .game-box h3 {
+  color: white;
+  font-size: 15px;
+  padding: 12px 0;
+}
+
 * {
   font-family: "Roboto Condensed", sans-serif;
 }

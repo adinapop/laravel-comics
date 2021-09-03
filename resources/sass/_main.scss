@@ -9,6 +9,7 @@
     background-color: #1c1c1c;
 
     .container {
+
         .current-series {
             position: absolute;
 
@@ -23,5 +24,24 @@
                 transform: translateY(-30px);
             }
         }
+
+        .games-container {
+            padding: 50px 0;
+
+            .game-box {
+
+                .img-game-box {
+
+                    img {width: 100%;} 
+                }
+
+                h3 {
+                    color: white;
+                    font-size: 15px;
+                    padding: 12px 0;
+                }
+            }
+        }
+
     }
 }

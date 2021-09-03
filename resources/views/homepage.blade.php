@@ -16,17 +16,24 @@
                     <div class="current-series-box">CURRENT SERIES</div>
                 </div>
 
-                <div class="row">
+                <div class="games-container row">
+                    
                     @foreach($games as $game)
 
                     <div class="game-box col-2">
-                        <img src="{{ $game['thumb'] }}" alt="{{ $game['series'] }} 's Thumb">
-                        <h3>{{ $game['series'] }}</h3>
+                        <a href="">
+                            <div class="img-game-box"><img src="{{ $game['thumb'] }}" alt="{{ $game['series'] }} 's Thumb"></div>
+                            <h3>{{ strtoupper($game['series']) }}</h3>
+                        </a>
                     </div>
 
                     @endforeach
-                    
                 </div>
+                
+                <div class="button-container">
+                    <button>LOAD MORE</button>
+                </div>
+
             </div>
 
         </div>
