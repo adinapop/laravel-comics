@@ -11187,6 +11187,19 @@ a.text-dark:focus {
   padding: 12px 0;
 }
 
+.series-container .container .button-container {
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+.series-container .container .button-container button {
+  background-color: #0282f9;
+  border: none;
+  padding: 8px 80px;
+  color: white;
+  font-weight: bold;
+}
+
 * {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -11207,5 +11220,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 

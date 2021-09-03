@@ -20,3 +20,14 @@ Route::get('/', function () {
         'games' => $arrayGames
     ]);
 })->name("home");
+
+Route::get('/game/{id}', function ($id) {
+
+    // aggiorno l'id con un valore posizionale
+    $arrayIndex = $id - 1;
+    $arrayGames = config('gamesDb');
+    return view('game', [
+        "arrayIndex" => $arrayIndex,
+        'games' => $arrayGames
+    ]);
+})->name('game');

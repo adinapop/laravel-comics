@@ -43,5 +43,18 @@
             }
         }
 
+        .button-container {
+            padding-bottom: 24px;
+            text-align: center;
+
+            button {
+                background-color: #0282f9;
+                border: none;
+                padding: 8px 80px;
+                color: white;
+                font-weight: bold;
+            }
+        }
+
     }
 }

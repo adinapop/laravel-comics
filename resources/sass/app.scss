@@ -26,4 +26,10 @@ ul {
     padding-inline-start: 0px;
 }
 
-a {text-decoration: none;}
+a {
+    text-decoration: none;
+
+    &:hover {text-decoration-line: none;}
+}
+
+

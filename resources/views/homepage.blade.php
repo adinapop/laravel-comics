@@ -4,8 +4,11 @@
 <!-- title section -->
 @section('title', 'Home Page')
 
-@section("Maincontent")
+@section('shopPage')
+    <div class="container-jumbotron"></div>
+@endsection
 
+@section("Maincontent")
     <div>
         <div class="container-jumbotron"></div>
 
@@ -21,7 +24,7 @@
                     @foreach($games as $game)
 
                     <div class="game-box col-2">
-                        <a href="">
+                        <a href="{{ route('game', [ 'id' => $loop->iteration ]) }}">
                             <div class="img-game-box"><img src="{{ $game['thumb'] }}" alt="{{ $game['series'] }} 's Thumb"></div>
                             <h3>{{ strtoupper($game['series']) }}</h3>
                         </a>

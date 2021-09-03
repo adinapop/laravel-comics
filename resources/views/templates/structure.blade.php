@@ -20,13 +20,17 @@
         @include("templates.header")
     </header>
 
+    <section>
+        @yield("shopPage")
+    </section>
+
     <main>
         <!-- il div "cede" il suo contenuto con yield alla section dove sarà inserito -->
         @yield("Maincontent")
     </main>
 
     <section>
-        @include("templates.shopSection")
+        @yield("templates.shopSection")
     </section>
 
     <footer>
