@@ -7,7 +7,24 @@
 @endsection
 
 @section('Maincontent')
-CIAO
+
+<section>
+    <div class="colored-container"></div>
+
+    <div class="container">
+
+        <div class="row col-10">
+
+            @dump($games[arrayIndex])
+
+            <div class="adv-container"></div>
+
+        </div>
+    </div>
+
+</section>
+
+
 @endsection
 
 

@@ -10,8 +10,6 @@
 
 @section("Maincontent")
     <div>
-        <div class="container-jumbotron"></div>
-
         <div class="series-container">
             <div class="container">
 
@@ -26,7 +24,7 @@
                     <div class="game-box col-2">
                         <a href="{{ route('game', [ 'id' => $loop->iteration ]) }}">
                             <div class="img-game-box"><img src="{{ $game['thumb'] }}" alt="{{ $game['series'] }} 's Thumb"></div>
-                            <h3>{{ strtoupper($game['series']) }}</h3>
+                            <h3>{{ $game['series'] }}</h3>
                         </a>
                     </div>
 

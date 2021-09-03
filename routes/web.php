@@ -30,4 +30,4 @@ Route::get('/game/{id}', function ($id) {
         "arrayIndex" => $arrayIndex,
         'games' => $arrayGames
     ]);
-})->name('game');
+})->name("game");
