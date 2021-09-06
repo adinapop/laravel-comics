@@ -11205,30 +11205,140 @@ a.text-dark:focus {
   background-color: #0282f9;
 }
 
-.info-container .green-container {
+.colored-container .thumb-box {
+  position: absolute;
+  transform: translateY(-250px);
+}
+
+.colored-container .thumb-box :first-child {
+  position: absolute;
+  background-color: #0282f9;
+  color: white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  padding: 3px;
+  font-size: 20px;
+}
+
+.colored-container .thumb-box img {
+  border: 2px solid white;
+}
+
+.colored-container .thumb-box :nth-child(3) {
+  position: absolute;
+  transform: translateY(-25px);
+  background-color: #0282f9;
+  color: white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.single-game-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.single-game-container .info-container .green-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: green;
+  color: whitesmoke;
+  margin: 24px 0;
 }
 
-.info-container .green-container .price-container {
+.single-game-container .info-container .green-container .price-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
-  padding: 12px;
+  padding: 12px 24px;
+  border-right: 1px solid gray;
+}
+
+.single-game-container .info-container .check-button button {
+  background-color: green;
+  border: none;
+  padding: 12px 24px;
+  color: white;
+}
+
+.single-game-container .adv-container div {
+  text-align: end;
 }
 
 .description-container {
-  background-color: #f6f6f6;
+  background-color: #c9c9c9;
+  border-top: 1px solid gray;
+  padding-bottom: 120px;
 }
 
-.description-container .talent-container .artists-container {
-  display: flex;
+.description-container .talent-container h2 {
+  padding: 24px 0;
 }
 
-.description-container .specs-container .writers-container {
+.description-container .talent-container .artists-box {
   display: flex;
+  border-top: 1px solid gray;
+  padding: 6px 0;
+}
+
+.description-container .talent-container .artists-box div {
+  flex-shrink: 1 1 5em;
+}
+
+.description-container .talent-container .artists-box p {
+  flex: 1 1 20em;
+}
+
+.description-container .talent-container .writers-box {
+  display: flex;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 6px 0;
+}
+
+.description-container .talent-container .writers-box div {
+  flex: 1 1 5em;
+}
+
+.description-container .talent-container .writers-box p {
+  flex: 1 1 20em;
+}
+
+.description-container .specs-container h2 {
+  padding: 24px 0;
+}
+
+.description-container .specs-container .series-box {
+  display: flex;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.description-container .specs-container .series-box div {
+  flex: 1 1 50em;
+  padding: 12px 0;
+}
+
+.description-container .specs-container .price-box {
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+
+.description-container .specs-container .price-box div {
+  flex: 1 1 50em;
+  padding: 12px 0;
+}
+
+.description-container .specs-container .on-sale-box {
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+
+.description-container .specs-container .on-sale-box div {
+  flex: 1 1 50em;
+  padding: 12px 0;
 }
 
 * {

@@ -1,38 +1,143 @@
 .colored-container {
     height: 80px;
     background-color: #0282f9;
+
+    .thumb-box {
+        position: absolute;
+        transform: translateY(-250px);
+
+        :first-child {
+            position: absolute;
+            background-color: #0282f9;
+            color: white;
+            border-top: 1px solid white;
+            border-left: 1px solid white;
+            padding: 3px;
+            font-size: 20px;
+        }
+
+        img {border: 2px solid white;}
+
+        :nth-child(3) {
+            position: absolute;
+            transform: translateY(-25px);
+            background-color: #0282f9;
+            color: white;
+            border-top: 1px solid white;
+            border-left: 1px solid white;
+        }
+
+    }
 }
 
-.info-container {
+.single-game-container {
 
-    .green-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
 
-        .price-container {
+    .info-container {
+    
+        .green-container {
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            flex-grow: 1;
-            padding: 12px;
+            align-items: center;
+            background-color: green;
+            color: whitesmoke;
+            margin: 24px 0;
+    
+            .price-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-grow: 1;
+                padding: 12px 24px;
+                border-right: 1px solid gray;
+            }
         }
+
+        .check-button  {
+
+            button {
+                background-color: green;
+                border: none;
+                padding: 12px 24px;
+                color: white;
+            }
+        }
+    }
+    
+    .adv-container {
+        div {text-align: end;}
     }
 }
 
 .description-container {
-    background-color: #f6f6f6;
+
+    background-color: rgb(201, 201, 201);
+    border-top: 1px solid gray;
+    padding-bottom: 120px;
 
     .talent-container {
 
-        .artists-container {
+        h2 {padding: 24px 0;}
+
+        .artists-box {
             display: flex;
+            border-top: 1px solid gray;
+            padding: 6px 0;
+
+            div {flex-shrink: 1 1 5em;}
+
+            p {flex: 1 1 20em;}
+        }
+
+        .writers-box {
+            display: flex;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            padding: 6px 0;
+
+            div {flex: 1 1 5em;}
+
+            p {flex: 1 1 20em;}
         }
     }
 
     .specs-container {
-        .writers-container {
+        
+        h2 {padding: 24px 0}
+
+        .series-box {
             display: flex;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            
+            div {
+                flex: 1 1 50em;
+                padding: 12px 0;
+            }
+        }
+
+        .price-box {
+            display: flex;
+            border-bottom: 1px solid gray;
+
+            div {
+                flex: 1 1 50em;
+                padding: 12px 0;
+            }
+
+        }
+
+        .on-sale-box {
+            display: flex;
+            border-bottom: 1px solid gray;
+
+            div {
+                flex: 1 1 50em;
+                padding: 12px 0;
+            }
+
         }
     }
 }
