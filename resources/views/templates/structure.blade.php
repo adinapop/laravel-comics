@@ -21,16 +21,16 @@
     </header>
 
     <section>
-        @yield("shopPage")
+        @yield("jumbotron")
     </section>
 
     <main>
         <!-- il div "cede" il suo contenuto con yield alla section dove sarà inserito -->
-        @yield("Maincontent")
+        @yield("main")
     </main>
 
     <section>
-        @yield("templates.shopSection")
+        @yield("shopSection")
     </section>
 
     <footer>
@@ -38,6 +38,5 @@
         @include("templates.footer")
     </footer>
 
-    
 </body>
 </html>

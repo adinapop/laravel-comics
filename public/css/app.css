@@ -11156,6 +11156,8 @@ a.text-dark:focus {
 
 .series-container {
   background-color: #1c1c1c;
+  position: relative;
+  z-index: 1002;
 }
 
 .series-container .container .current-series {
@@ -11184,7 +11186,8 @@ a.text-dark:focus {
 .series-container .container .games-container .game-box h3 {
   color: white;
   font-size: 15px;
-  padding: 12px 0;
+  padding-top: 24px;
+  padding-bottom: 48px;
 }
 
 .series-container .container .button-container {
@@ -11207,7 +11210,7 @@ a.text-dark:focus {
 
 .colored-container .thumb-box {
   position: absolute;
-  transform: translateY(-250px);
+  transform: translateY(-230px);
 }
 
 .colored-container .thumb-box :first-child {
@@ -11217,7 +11220,6 @@ a.text-dark:focus {
   border-top: 1px solid white;
   border-left: 1px solid white;
   padding: 3px;
-  font-size: 20px;
 }
 
 .colored-container .thumb-box img {
@@ -11229,8 +11231,10 @@ a.text-dark:focus {
   transform: translateY(-25px);
   background-color: #0282f9;
   color: white;
-  border-top: 1px solid white;
   border-left: 1px solid white;
+  border-right: 1px solid white;
+  width: 100%;
+  text-align: center;
 }
 
 .single-game-container {
@@ -11238,11 +11242,16 @@ a.text-dark:focus {
   margin-bottom: 60px;
 }
 
+.single-game-container .info-container h1 {
+  color: #083f5e;
+  font-weight: bolder;
+}
+
 .single-game-container .info-container .green-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: green;
+  background-color: #55ba59;
   color: whitesmoke;
   margin: 24px 0;
 }
@@ -11253,48 +11262,69 @@ a.text-dark:focus {
   justify-content: space-between;
   flex-grow: 1;
   padding: 12px 24px;
-  border-right: 1px solid gray;
+  border-right: 1px solid #cacaca;
+}
+
+.single-game-container .info-container .green-container .price-container div {
+  color: #a1dd73;
+}
+
+.single-game-container .info-container .green-container .price-container span {
+  color: white;
+}
+
+.single-game-container .info-container p {
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .single-game-container .info-container .check-button button {
-  background-color: green;
+  background-color: #55ba59;
   border: none;
   padding: 12px 24px;
   color: white;
 }
 
-.single-game-container .adv-container div {
+.single-game-container .adv-container {
   text-align: end;
+  font-weight: bolder;
 }
 
 .description-container {
-  background-color: #c9c9c9;
-  border-top: 1px solid gray;
+  background-color: #e6e6e6;
+  border-top: 1px solid #cacaca;
   padding-bottom: 120px;
+  font-weight: bold;
 }
 
 .description-container .talent-container h2 {
   padding: 24px 0;
+  color: #083f5e;
+  font-weight: bolder;
 }
 
 .description-container .talent-container .artists-box {
   display: flex;
-  border-top: 1px solid gray;
+  border-top: 1px solid #cacaca;
   padding: 6px 0;
 }
 
 .description-container .talent-container .artists-box div {
-  flex-shrink: 1 1 5em;
+  flex: 1 1 5em;
 }
 
 .description-container .talent-container .artists-box p {
   flex: 1 1 20em;
 }
 
+.description-container .talent-container .artists-box p a {
+  color: #03a9dd;
+}
+
 .description-container .talent-container .writers-box {
   display: flex;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
   padding: 6px 0;
 }
 
@@ -11306,14 +11336,20 @@ a.text-dark:focus {
   flex: 1 1 20em;
 }
 
+.description-container .talent-container .writers-box p a {
+  color: #03a9dd;
+}
+
 .description-container .specs-container h2 {
   padding: 24px 0;
+  color: #083f5e;
+  font-weight: bolder;
 }
 
 .description-container .specs-container .series-box {
   display: flex;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
 }
 
 .description-container .specs-container .series-box div {
@@ -11321,9 +11357,13 @@ a.text-dark:focus {
   padding: 12px 0;
 }
 
+.description-container .specs-container .series-box .serie {
+  color: #03a9dd;
+}
+
 .description-container .specs-container .price-box {
   display: flex;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #cacaca;
 }
 
 .description-container .specs-container .price-box div {
@@ -11333,12 +11373,41 @@ a.text-dark:focus {
 
 .description-container .specs-container .on-sale-box {
   display: flex;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #cacaca;
 }
 
 .description-container .specs-container .on-sale-box div {
   flex: 1 1 50em;
   padding: 12px 0;
+}
+
+.shop-container {
+  background-color: #e6e6e6;
+  border-top: 1px solid #cacaca;
+  position: relative;
+  z-index: 1002;
+}
+
+.shop-container .shop-content {
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid #cacaca;
+  border-left: 1px solid #cacaca;
+  padding: 12px;
+}
+
+.shop-container .shop-content :first-child {
+  color: #a9a7a7;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.shop-container .shop-content .icon-box {
+  width: 40px;
+}
+
+.shop-container .shop-content .icon-box img {
+  width: 100%;
 }
 
 * {

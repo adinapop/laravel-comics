@@ -7,6 +7,8 @@
 
 .series-container {
     background-color: #1c1c1c;
+    position: relative;
+    z-index: 1002;
 
     .container {
 
@@ -38,7 +40,8 @@
                 h3 {
                     color: white;
                     font-size: 15px;
-                    padding: 12px 0;
+                    padding-top: 24px;
+                    padding-bottom: 48px;
                 }
             }
         }

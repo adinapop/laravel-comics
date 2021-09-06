@@ -4,7 +4,7 @@
 
     .thumb-box {
         position: absolute;
-        transform: translateY(-250px);
+        transform: translateY(-230px);
 
         :first-child {
             position: absolute;
@@ -13,7 +13,6 @@
             border-top: 1px solid white;
             border-left: 1px solid white;
             padding: 3px;
-            font-size: 20px;
         }
 
         img {border: 2px solid white;}
@@ -23,8 +22,10 @@
             transform: translateY(-25px);
             background-color: #0282f9;
             color: white;
-            border-top: 1px solid white;
             border-left: 1px solid white;
+            border-right: 1px solid white;
+            width: 100%;
+            text-align: center;
         }
 
     }
@@ -36,12 +37,17 @@
     margin-bottom: 60px;
 
     .info-container {
+
+        h1 {
+            color: #083f5e;
+            font-weight: bolder;
+        }
     
         .green-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: green;
+            background-color: #55ba59;
             color: whitesmoke;
             margin: 24px 0;
     
@@ -51,14 +57,24 @@
                 justify-content: space-between;
                 flex-grow: 1;
                 padding: 12px 24px;
-                border-right: 1px solid gray;
+                border-right: 1px solid rgb(202, 202, 202);
+
+                div {color: #a1dd73;}
+
+                span {color: white;}
             }
+
+        }
+        
+        p {
+            font-weight: bold;
+            font-size: 15px;
         }
 
         .check-button  {
 
             button {
-                background-color: green;
+                background-color: #55ba59;
                 border: none;
                 padding: 12px 24px;
                 color: white;
@@ -67,60 +83,82 @@
     }
     
     .adv-container {
-        div {text-align: end;}
+        text-align: end;
+        font-weight: bolder;
     }
 }
 
 .description-container {
 
-    background-color: rgb(201, 201, 201);
-    border-top: 1px solid gray;
+    background-color: #e6e6e6;
+    border-top: 1px solid rgb(202, 202, 202);
     padding-bottom: 120px;
+    font-weight: bold;
 
     .talent-container {
 
-        h2 {padding: 24px 0;}
+        h2 {
+            padding: 24px 0;
+            color: #083f5e;
+            font-weight: bolder;
+        }
 
         .artists-box {
             display: flex;
-            border-top: 1px solid gray;
-            padding: 6px 0;
-
-            div {flex-shrink: 1 1 5em;}
-
-            p {flex: 1 1 20em;}
-        }
-
-        .writers-box {
-            display: flex;
-            border-top: 1px solid gray;
-            border-bottom: 1px solid gray;
+            border-top: 1px solid rgb(202, 202, 202);
             padding: 6px 0;
 
             div {flex: 1 1 5em;}
 
-            p {flex: 1 1 20em;}
+            p {
+                flex: 1 1 20em;
+
+                a {color: #03a9dd;}
+            }
+        }
+
+        .writers-box {
+            display: flex;
+            border-top: 1px solid rgb(202, 202, 202);
+            border-bottom: 1px solid rgb(202, 202, 202);
+            padding: 6px 0;
+
+            div {flex: 1 1 5em;}
+
+            p {
+                flex: 1 1 20em;
+
+                a {color: #03a9dd;}
+            }
         }
     }
 
     .specs-container {
         
-        h2 {padding: 24px 0}
+        h2 {
+            padding: 24px 0;
+            color: #083f5e;
+            font-weight: bolder;
+        }
 
         .series-box {
             display: flex;
-            border-top: 1px solid gray;
-            border-bottom: 1px solid gray;
+            border-top: 1px solid rgb(202, 202, 202);
+            border-bottom: 1px solid rgb(202, 202, 202);
             
             div {
                 flex: 1 1 50em;
                 padding: 12px 0;
             }
+
+            .serie {
+                color: #03a9dd;
+            }
         }
 
         .price-box {
             display: flex;
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid rgb(202, 202, 202);
 
             div {
                 flex: 1 1 50em;
@@ -131,13 +169,42 @@
 
         .on-sale-box {
             display: flex;
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid rgb(202, 202, 202);
 
             div {
                 flex: 1 1 50em;
                 padding: 12px 0;
             }
 
+        }
+    }
+}
+
+.shop-container {
+    background-color: #e6e6e6;
+    border-top: 1px solid rgb(202, 202, 202);
+    position: relative;
+    z-index: 1002;
+
+    .shop-content {
+        display: flex;
+        justify-content: space-between;
+        border-right: 1px solid rgb(202, 202, 202);
+        border-left: 1px solid rgb(202, 202, 202);
+        padding: 12px;
+
+
+        :first-child {
+            color: #a9a7a7;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+
+        .icon-box {
+            width: 40px;
+
+            img {
+                width: 100%;}
         }
     }
 }

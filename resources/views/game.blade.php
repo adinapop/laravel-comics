@@ -2,17 +2,17 @@
 
 @section('title', 'Game')
 
-@section('shopPage')
+@section('jumbotron')
     <div class="container-jumbotron"></div>
 @endsection
 
-@section('Maincontent')
+@section('main')
 
 <section>
     <div class="colored-container">
         <div class="container">
             <div class="thumb-box">
-                <div>{{ $games[$arrayIndex]['type'] }}</div>
+                <div>{{ strtoupper($games[$arrayIndex]['type']) }}</div>
                 <img src="{{ $games[$arrayIndex]['thumb'] }}" alt="">
                 <div>VIEW GALLERY</div>
             </div>
@@ -25,15 +25,17 @@
 
             <div class="info-container col-8">
 
-                <h1>{{ $games[$arrayIndex]['title'] }}</h1>
+                <h1>{{ strtoupper($games[$arrayIndex]['title']) }}</h1>
 
                 <div class="green-container">
                     <div class="price-container">
-                        <div class="price-content">U.S. Price: {{ $games[$arrayIndex]['price'] }}</div>
+                        <div class="price-content">U.S. Price: 
+                            <span>{{ $games[$arrayIndex]['price'] }}</span>
+                        </div>
                         <div>AVAILABLE</div>
                     </div>
                     <div class="check-button">
-                        <button>CHECK Availability</button>
+                        <button>Check Availability</button>
                     </div>
                 </div>
 
@@ -85,7 +87,7 @@
 
                     <div class="series-box">
                         <div>Series:</div>
-                        <div>{{ $games[$arrayIndex]['series'] }}</div>
+                        <div class="serie">{{ $games[$arrayIndex]['series'] }}</div>
                     </div>
 
                     <div class="price-box">
@@ -98,11 +100,37 @@
                         <div>{{ $games[$arrayIndex]['sale_date'] }}</div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="shop-container">
+        <div class="container">
+            <div class="row">
+
+                <div class="shop-content col-3">
+                    <div>DIGITAL COMICS</div>
+                    <div class="icon-box"><img src="{{'/img/buy-comics-digital-comics.png'}}" alt="Digital Comics Icon"></div>
+                </div>
+
+                <div class="shop-content col-3">
+                    <div>SHOP DC</div>
+                    <div class="icon-box"><img src="{{'/img/buy-comics-merchandise.png'}}" alt="Digital Comics Icon"></div>
+                </div>
+
+                <div class="shop-content col-3">
+                    <div>COMIC SHOP LOCATOR</div>
+                    <div class="icon-box"><img src="{{'/img/buy-comics-subscriptions.png'}}" alt="Digital Comics Icon"></div>
+                </div>
+
+                <div class="shop-content col-3">
+                    <div>SUBSCRIPTIONS</div>
+                    <div class="icon-box"><img src="{{'/img/buy-comics-shop-locator.png'}}" alt="Digital Comics Icon"></div>
+
+                </div>
             </div>
 
         </div>
-        
 
     </div>
 
